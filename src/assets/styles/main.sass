@@ -1,0 +1,43 @@
+@import _variables
+
+*
+    margin: 0
+    padding: 0
+
+body
+    background-color: #4361ee
+    font-family: Oswald
+
+.container
+    display: grid
+    background-color: #7209b7
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-areas: "nav nav nav""intro intro intro""browser browser browser""map map map""footer footer footer"
+    grid-template-rows: 80px 767px 500px 600px 480px
+
+.container .nav
+    background-color: #4cc9f0
+    grid-column-start: nav
+    grid-column-end: nav
+
+.container .intro
+    background-color: #f72585
+    grid-column-start: intro
+    grid-column-end: intro
+    background-image: url('../images/intro-img.png')
+    background-size: auto 100%
+
+.container .browser
+    background-color: #ffd166
+    grid-column-start: browser
+    grid-column-end: browser
+
+.container .map
+    background-color: #06d6a0
+    grid-column-start: map
+    grid-column-end: map
+
+.container .footer
+    background-color: #f94144
+    grid-column-start: footer
+    grid-column-end: footer
