@@ -1,9 +1,10 @@
 import React from 'react';
+import MapProject from '../../MapProject';
 
 const MapSection = () => {
     return ( 
         <div className='map'>
-            <p>Sección 3 donde va mapa</p>
+            <MapProject />
         </div>
      );
 }

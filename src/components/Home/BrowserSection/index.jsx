@@ -1,9 +1,12 @@
 import React from 'react';
+import Browser from '../../Browser';
+import CompanyTrust from '../../CompanyTrust';
 
 const BrowserSection = () => {
     return ( 
     <div className='browser'>
-        <p>Sección 2 donde va el buscador y empresas que confían</p>
+        <Browser />
+        <CompanyTrust />
     </div>
     );
 }
