@@ -8,11 +8,9 @@ import WelcomeSection from './WelcomeSection';
 const Home = () => {
     return ( 
         <Fragment>
-            <Navbar/>
             <WelcomeSection />
             <BrowserSection />
             <MapSection />
-            <Footer />
         </Fragment>
      );
 }

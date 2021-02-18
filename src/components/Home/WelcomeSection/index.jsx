@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import TypeWriter from '../../TypeWriter'
+import Button from '../../Button'
 
 import arrow from '../../../assets/images/arrow.png'
 
@@ -20,7 +20,10 @@ const WelcomeSection = () => {
                             <h2>Quiero neutralizar mi huella de carbono</h2>
                         </div>
                         <div>
-                        <Link> Proyectos </Link>
+                            <Button
+                            path={'/finca-guadalupe-zaju'}
+                            name={'Observar'}
+                            />
                         </div>
                     </div>
                     <div className="arrow">

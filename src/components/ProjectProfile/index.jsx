@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectProfile = () => {
     return ( 
         <div>
-            Aquí va componente reusable de proyectos
+            ESTE ES EL COMPONENTE rehusable
         </div>
      );
 }
