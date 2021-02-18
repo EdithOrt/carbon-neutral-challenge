@@ -79,6 +79,12 @@
   height: 124px;
 }
 
+@media screen and (max-width: 480px) {
+  .nav img {
+    height: 90px;
+  }
+}
+
 @font-face {
   font-family: Oswald;
   src: url("../font/Oswald-VariableFont_wght.ttf");
