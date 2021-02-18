@@ -1,11 +1,11 @@
 import React from 'react';
 import Typed from 'react-typed'
 
-const TypeWriter = () => {
+const TypeWriter = ({string1, string2}) => {
 
     return ( 
         <Typed
-            strings={['Conoce más de nuestros proyectos para comprar bonos de carbono.', 'Conoce más de nuestros proyectos para comprar bonos de carbono.']}
+            strings={[string1,string2]}
             typeSpeed={50}
             backSpeed={40}
             loop

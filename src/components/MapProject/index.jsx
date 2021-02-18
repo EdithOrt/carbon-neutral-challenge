@@ -6,13 +6,11 @@ import TypeWriter from '../TypeWriter'
 const MapProject = () => {
     
     const [viewport, setViewport] = useState({
-        width: 400,
-        height: 400,
+        width: '100%',
+        height: '450px',
         latitude: 23.100273,
         longitude: -101.908098,
-        width: 'auto',
-        height: '100%',
-        zoom: 4,
+        zoom: 4
       });
       
     return (
@@ -27,10 +25,13 @@ const MapProject = () => {
             </ReactMapGL>
             <div className='resume-container'>
                 <div className='content-typewriter'>
-                    <TypeWriter />
+                    <TypeWriter
+                    string1 = {"Conoce más de nuestros proyectos para comprar bonos de carbono."}
+                    string2 = {"Conoce más de nuestros proyectos para comprar bonos de carbono."}
+                    />
                 </div>
                 <div className='button-show-map'>
-                    <button>ClickME!</button>
+                    <button>Explorar</button>
                 </div>
             </div>
         </Fragment> 
