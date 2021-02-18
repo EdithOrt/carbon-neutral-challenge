@@ -11,3 +11,35 @@
         display: flex
         flex-direction: column
         align-items: center
+        margin-top: -200px
+
+.ant-input-group > .ant-input:first-child, .ant-input-group-addon:first-child
+    height: 65px
+    border-top-left-radius: 50px
+    border-bottom-left-radius: 50px
+    font-size: 24px
+    padding-left: 34px
+    border: none
+    box-shadow: -3px 1px 4px #C4C4C4
+
+.ant-btn-icon-only > *
+    font-size: 24px !important
+
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button
+    height: 65px
+    width: 65px
+    border-radius: 0 50px 50px 0 !important
+    border-left: none
+    border: none
+    box-shadow: 2px 1px 4px #C4C4C4
+
+.ant-input-group-addon
+    background-color: transparent !important
+
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary)
+    color: $azul-toroto !important
+
+//Media query
+@media screen and ( max-width: 480px )
+    .ant-input-group > .ant-input:first-child, .ant-input-group-addon:first-child
+        font-size: 16px
