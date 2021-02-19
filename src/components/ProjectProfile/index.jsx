@@ -1,9 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Carousel from '../CarouselProject';
 
-const ProjectProfile = () => {
+import Tab from '../Tab';
+
+const ProjectProfile = ({img, lat, long, data}) => {
+    console.log(data[0])
+    let projectOne = data[0];
     return ( 
         <div>
-            ESTE ES EL COMPONENTE rehusable
+            <Carousel 
+            img={img}
+            lat={lat}
+            long={long}
+            />
+            <Tab
+            content={projectOne}
+            />
+            <Link to='#'>PROYECTO 1</Link>
+            <Link to='#'>PROYECTO 2</Link>
+            <Link to='#'>PROYECTO 3</Link>
         </div>
      );
 }
