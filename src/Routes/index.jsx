@@ -18,7 +18,7 @@ const Routes = () => {
             <Switch>
                 <Route path='/finca-guadalupe-zaju'>
                     <Project1
-                     data={data}
+                     data={data[0]}
                     />
                 </Route>
                 <Route path='/icico'>

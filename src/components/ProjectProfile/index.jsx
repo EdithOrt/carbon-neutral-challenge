@@ -4,18 +4,27 @@ import Carousel from '../CarouselProject';
 
 import Tab from '../Tab';
 
-const ProjectProfile = ({img, lat, long, data}) => {
-    console.log(data[0])
-    let projectOne = data[0];
+const ProjectProfile = ({name,img, lat, long, totalOffsets,aviableOffsets,coBenefits,offsetPrice,description,location,type,developer,verifier,area,jobsGenerated}) => {
     return ( 
         <div>
-            <Carousel 
+            <Carousel
+            projectName={name} 
             img={img}
             lat={lat}
             long={long}
             />
             <Tab
-            content={projectOne}
+            totalOffsets={totalOffsets}
+            aviableOffsets={aviableOffsets}
+            benefits={coBenefits}
+            price={offsetPrice}
+            description={description}
+            location={location}
+            type={type}
+            developer={developer}
+            verifier={verifier}
+            area={area}
+            jobsGenerated={jobsGenerated}
             />
             <Link to='#'>PROYECTO 1</Link>
             <Link to='#'>PROYECTO 2</Link>

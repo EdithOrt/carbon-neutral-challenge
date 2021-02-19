@@ -22,7 +22,7 @@ const WelcomeSection = () => {
                         <div>
                             <Button
                             path={'/finca-guadalupe-zaju'}
-                            name={'Observar'}
+                            name={'Proyectos'}
                             />
                         </div>
                     </div>
