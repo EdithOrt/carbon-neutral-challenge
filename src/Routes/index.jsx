@@ -11,7 +11,7 @@ import GetData from '../utils/getData';
 
 const Routes = () => {
     const data = GetData();
-    console.log(data)
+    console.log(data[2])
     return ( 
         <Router>
             <Navbar/>
@@ -21,11 +21,22 @@ const Routes = () => {
                      data={data[0]}
                     />
                 </Route>
-                <Route path='/icico'>
-                    <Project2 />
+                {/* {data.map((project) => (
+                    <Route path='/proyectos'>
+                    <Project1
+                     data={data[0]}
+                    />
+                    </Route>
+                ))} */}
+                <Route path='/recarga-acuifero'>
+                    <Project2 
+                    data={data[1]}
+                    />
                 </Route>
-                <Route path='/recarga-de-acuifero'>
-                    <Project3 />
+                <Route path='/icico'>
+                    <Project3 
+                    data={data[2]}
+                    />
                 </Route>
                 <Route path='/'>
                     <Home />

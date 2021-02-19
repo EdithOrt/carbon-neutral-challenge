@@ -4,10 +4,10 @@ import MapReusable from '../MapReusable';
 
 const CarouselProject = ({projectName,img, lat, long}) => {
     return ( 
-        <Carousel autoplay>
+        <Carousel>
             <div>
               <h3>{projectName}</h3>
-              <img src={img} />
+              <img style={{width:'100%'}} src={img} />
             </div>
             <div>
               <MapReusable

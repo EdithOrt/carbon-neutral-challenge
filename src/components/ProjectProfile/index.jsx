@@ -26,9 +26,9 @@ const ProjectProfile = ({name,img, lat, long, totalOffsets,aviableOffsets,coBene
             area={area}
             jobsGenerated={jobsGenerated}
             />
-            <Link to='#'>PROYECTO 1</Link>
-            <Link to='#'>PROYECTO 2</Link>
-            <Link to='#'>PROYECTO 3</Link>
+            <Link to='/finca-guadalupe-zaju'>PROYECTO 1</Link>
+            <Link to='/recarga-acuifero'>PROYECTO 2</Link>
+            <Link to='/icico'>PROYECTO 3</Link>
         </div>
      );
 }
