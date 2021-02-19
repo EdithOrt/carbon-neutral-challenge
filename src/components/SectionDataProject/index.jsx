@@ -3,7 +3,7 @@ import ProjectProfile from '../ProjectProfile';
 
 const SectionDataProject = () => {
     return ( 
-        <div>
+        <div className='projects-views'>
             Aquí va componente reusable con cada proyecto
             <ProjectProfile />
         </div>

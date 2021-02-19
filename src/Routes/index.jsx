@@ -4,9 +4,12 @@ import Footer from '../components/Footer';
 import Home from '../components/Home';
 import Navbar from "../components/Navbar";
 import SectionDataProject from '../components/SectionDataProject';
+import GetData from '../utils/getData';
 
 
 const Routes = () => {
+    const data = GetData();
+    console.log(data)
     return ( 
         <Router>
             <Navbar/>

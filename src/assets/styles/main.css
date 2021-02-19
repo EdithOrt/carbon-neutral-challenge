@@ -11,7 +11,6 @@
 .container {
   display: -ms-grid;
   display: grid;
-  background-color: #7209b7;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "nav nav nav" "intro intro intro" "browser browser browser" "map map map" "footer footer footer";
@@ -27,7 +26,6 @@
 }
 
 .container .intro {
-  background-color: #f72585;
   -ms-grid-column: intro;
       grid-column-start: intro;
   grid-column-end: intro;
@@ -43,7 +41,6 @@
 }
 
 .container .map {
-  background-color: #06d6a0;
   -ms-grid-column: map;
       grid-column-start: map;
   grid-column-end: map;
@@ -54,6 +51,15 @@
   -ms-grid-column: footer;
       grid-column-start: footer;
   grid-column-end: footer;
+}
+
+.container .projects-views {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: -1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 5;
 }
 
 @font-face {
